@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container"> 
+    <fieldset>
+    <h1><legend>Formulario de Registro</legend></h1>
+    <br>
+    <form>
+        <label for="Nombre Completo">Nombre Completo:</label>
+        <input type="text" name="Nombre" id="Nombre" placeholder="ingrese su Nombre Completo" required minlength="3" maxlength="100" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios" required><br><br>
+
+        <label for="Correo Electronico"> Correo Electronico:</label>
+        <input type="email" id="email" name="email" placeholder="ingrese su email" required maxlength="255"><br><br>
+
+        <label for="Contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="Contraseña" placeholder="Escribe la contraseña" required minlength="8" maxlength="20" title="La contraseña debe tener entre 8 y 20 caracteres" pattern=".{8,20}" required><br><br>
+
+        <label for="Confirmar Contraseña"> Confirmar Contraseña:</label>
+        <input type="password" id="confirmar_contraseña" name="Confirmar_contraseña" placeholder="Confirma tu contraseña" required minlength="8" maxlength="20" pattern=".{8,20}" title="La contraseña debe tener entre 8 y 20 caracteres" required><br><br>
+
+        <label for="Fecha de nacimiento"> Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de Nacimiento" >
+        
+        <label for="Genero"> Genero:</label>
+        <select name="genero">
+        <option value="masculino">Masculino</option> <option value="femenino">Femenino</option> <option value="otro">Otro</option> </select><br></br>
+
+        <label for="Dirección"> Dirección:</label>
+        <textarea type="direccion" id="direccion" name="direccion" placeholder="Escribe tu dirección" requiredminlength="10" maxlength="255"></textarea><br><br>
+        <label for="acept"> Aceptas términos y condiciones:</label>
+        <label for="acept" class="checkbox-container"></label>
+        <input type="checkbox" name="acept" id="acept" required>
+        <span class="checkbox-text">Sí, acepto los términos y condiciones.</span>
+     
+          
+        
+        <input type="submit" value="Enviar">
+    </fieldset>
+
+
+    
+    </form> 
+    </div>
+
+
+    
+</body>
+</html>
